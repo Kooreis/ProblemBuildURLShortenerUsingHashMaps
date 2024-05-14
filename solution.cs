@@ -1,6 +1,5 @@
-class URLShortener {
-    constructor() {
-        this.urlMap = new Map();
-        this.baseUrl = "http://short.url/";
+shortenURL(longUrl) {
+        let shortUrl = this.baseUrl + this.generateShortCode();
+        this.urlMap.set(shortUrl, longUrl);
+        return shortUrl;
     }
-}
